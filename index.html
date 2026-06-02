@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digital Wardrobe</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary">
+      <a class="wordmark" href="#" aria-label="Digital Wardrobe home">WARDROBE</a>
+      <nav class="header-actions" aria-label="Catalog controls">
+        <button class="nav-button" id="searchToggle" type="button" aria-expanded="false" aria-controls="searchPanel">Search</button>
+        <button class="nav-button" id="filterToggle" type="button" aria-expanded="false" aria-controls="filterOverlay">Filter</button>
+        <button class="nav-button menu-button" id="menuToggle" type="button" aria-expanded="false" aria-controls="filterOverlay">Menu</button>
+      </nav>
+    </header>
+
+    <section class="search-panel" id="searchPanel" hidden>
+      <label class="sr-only" for="searchInput">Search wardrobe</label>
+      <input id="searchInput" class="search-input" type="search" autocomplete="off" spellcheck="false" placeholder="SEARCH WARDROBE">
+    </section>
+
+    <main id="app" class="app-shell" tabindex="-1"></main>
+
+    <aside class="filter-overlay" id="filterOverlay" aria-label="Filters" aria-hidden="true">
+      <div class="filter-top">
+        <p class="overlay-title">FILTER</p>
+        <button class="nav-button" id="filterClose" type="button">Close</button>
+      </div>
+      <div class="filter-content" id="filterContent"></div>
+      <div class="filter-bottom">
+        <button class="filter-reset" id="clearFilters" type="button">Clear all</button>
+      </div>
+    </aside>
+
+    <script src="data/items.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
