@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Digital Wardrobe</title>
+    <title>Wardrobe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400&display=swap">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header" aria-label="Primary">
-      <a class="wordmark" href="#" aria-label="Digital Wardrobe home">WARDROBE</a>
+      <a class="wordmark" href="#" aria-label="Wardrobe home">Wardrobe</a>
       <nav class="header-actions" aria-label="Catalog controls">
         <button class="nav-button" id="searchToggle" type="button" aria-expanded="false" aria-controls="searchPanel">Search</button>
         <button class="nav-button" id="filterToggle" type="button" aria-expanded="false" aria-controls="filterOverlay">Filter</button>
@@ -18,14 +21,14 @@
 
     <section class="search-panel" id="searchPanel" hidden>
       <label class="sr-only" for="searchInput">Search wardrobe</label>
-      <input id="searchInput" class="search-input" type="search" autocomplete="off" spellcheck="false" placeholder="SEARCH WARDROBE">
+      <input id="searchInput" class="search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Search wardrobe">
     </section>
 
     <main id="app" class="app-shell" tabindex="-1"></main>
 
     <aside class="filter-overlay" id="filterOverlay" aria-label="Filters" aria-hidden="true">
       <div class="filter-top">
-        <p class="overlay-title">FILTER</p>
+        <p class="overlay-title">Filter</p>
         <button class="nav-button" id="filterClose" type="button">Close</button>
       </div>
       <div class="filter-content" id="filterContent"></div>
